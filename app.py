@@ -16,7 +16,7 @@ pd.set_option('display.max_colwidth', None)
 sale = pd.read_csv('cleaned_sale.csv')
 rent = pd.read_csv('cleaned_rent.csv')
 # Getting Image
-logo = Image.open('../logo.jpg')
+logo = Image.open('logo.jpg')
 
 # Setting Title of App
 st.title('Lagos state House Predictor')
