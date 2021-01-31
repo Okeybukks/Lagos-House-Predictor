@@ -4,19 +4,17 @@ import re
 # Importing Neccessary Libraries
 from feature_engine.encoding import OneHotEncoder
 from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LinearRegression
 from sklearn.ensemble import RandomForestRegressor
-from sklearn.svm import SVC
 import os
 import streamlit as st
 from PIL import Image
 
 pd.set_option('display.max_colwidth', None)
 
-path = os.getcwd()
+# path = os.getcwd()
 # # Importing data
-sale = pd.read_csv(path + '/cleaned_sale.csv')
-rent = pd.read_csv(path + '/cleaned_rent.csv')
+sale = pd.read_csv('cleaned_sale.csv')
+rent = pd.read_csv('cleaned_rent.csv')
 # Getting Image
 logo = Image.open('../logo.jpg')
 
