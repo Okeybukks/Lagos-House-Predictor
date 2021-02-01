@@ -55,9 +55,9 @@ property_type = st.selectbox('What is your purchase type', ('Mini flat', 'Terrac
                                                             'Self contain', 'Terraced bungalow', 'Penthouse flat'))
 location = case_lower(st.selectbox('Where do you wish to stay ?',
                                    ('Ajah', 'Gbagada', 'Ikeja', 'Lekki', 'Ikoyi', 'Surulere', 'Ikorodu', 'Yaba')))
-bedrooms = st.slider('Number of Bedrooms', int(data['Bed'].min()), int(data['Bed'].max()), 1)
+bedrooms = st.slider('Number of Bedrooms', int(data['Bed'].min()), int(data['Bed'].max()))
 bathrooms = st.slider('Number of Bathrooms', 1, int(data['Bath'].max()))
-toilets = st.slider('Number of Toilets', int(data['Toilet'].min()), int(data['Toilet'].max()), 1)
+toilets = st.slider('Number of Toilets', 1, int(data['Toilet'].max()))
 parking_space = word_convert(st.selectbox('Do you need parking space ?', ('Yes', 'No')))
 electricity = word_convert(st.selectbox('Do you need 24hrs Electricity ?', ('Yes', 'No')))
 security = word_convert(st.selectbox('Do you need security guards ?', ('Yes', 'No')))
